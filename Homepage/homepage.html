@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+    ">
+    <style>
+          .container--1{
+            background-color: rgba(6, 95, 115, 1);
+            display: flex;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            z-index: 2;
+        }
+        .icon__phone{
+            font-size: 30px;
+            line-height: 50px;
+            margin-left: 10px;
+            color: white;
+        }
+        #contact{
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            margin-left: 5px;
+        }
+        .option{
+            float: right;
+            flex: 3;
+        }
+        .box__icon{
+            display: flex;
+            flex: 1;
+        }
+        .id{
+            float: right;
+            display: flex;
+        }
+        .link{
+            color: white;
+            font-size: 30px;
+            margin-left: 15px;
+            margin-right: 10px;
+            line-height: 50px;
+        }
+        #search{
+            height: 30px;
+            margin-top: 10px;
+        }
+        .search{
+            color: white;
+            font-size: 20px;
+            margin-right: 10px;
+            line-height: 50px;
+        }
+        #button-login{
+            height: 30px;
+            border-radius: 5px;
+            width: 70px;
+            background-color: rgba(115, 188, 217, 1);
+            color: white;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .container--2{
+            width: 100%;
+            height: 70px;
+            margin-top: 50px;
+            display: flex;
+        }
+        .iconmenu{
+            font-size: 30px;
+            line-height: 50px;
+            margin-left: 10px;
+            line-height: 70px;
+        }
+        .img{
+            width: 60px;
+            height: 50px;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        .TK{
+            color: red;
+            font-weight: bold;
+        }
+        .name{
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 10px;
+            line-height: 70px;
+        }
+        .name__menu{
+            flex: 2;
+            display: flex;
+        }
+        .button-function{
+            background-color: rgba(115, 188, 217, 1);
+            font-weight: bold;
+            height: 40px;
+            margin-top: 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .function--3{
+            margin-right: 30px;
+        }
+        #home__background-1{
+            background-image:linear-gradient( rgba(115, 188, 217, 1),rgba(115, 188, 217, 0)), url(./BKG_right.jpg);
+            background-repeat: no-repeat;
+            background-size: 70% auto;
+            width: 95vw;
+            height: 100vh;
+            border-bottom-right-radius: 20px;
+        }
+        .home__title{
+            font-size: 70px;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        .tk{
+            color: red;
+        }
+        .home__content-1{
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            margin-left: 5%;
+            margin-top: -25px;
+        }
+        .home__content-2{
+            font-size: 45px;
+            font-weight: bold;
+            color: rgba(76, 71, 71, 1);
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        .home__content-3{
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+            color: rgba(76, 71, 71, 1);
+            margin-left: 5%;
+            margin-top: 20px;
+        }
+        .home__content-4{
+            font-size: 30px;
+            font-weight: bold;
+            color: rgba(76, 71, 71, 1);
+            margin-left: 5%;
+            margin-top: 8%;
+        }
+        #home--search{
+            width: 30%;
+            margin-left: 5%;
+        }
+        #home__button--writemail{
+            width: 100%;
+            /* margin-left: 5%; */
+            height: 40px;
+            border-radius: 5px;
+            position: relative;
+        }
+        #home__button--go{
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgba(39, 80, 89, 1);
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            margin-left: -4.5%;
+            margin-top: 5px;
+        }
+        #home--circle{
+           
+            float: right;
+            margin-top: 12%;
+            margin-right: 9%;
+        }
+        #home__img--1{
+            width: 500px;
+            height: 500px;
+        }
+        .home__container--item-1{
+            background-image: url(./Homepage\ 2.png);
+            background-size: 100% auto;
+            width: 99vw;
+            height: 100vh;
+            display: flex;
+            position: relative;
+            z-index: 1;
+        }
+        .detail--1{
+            width: 320px;
+            height: 500px;
+            background: linear-gradient(rgba(115, 188, 217, 1),rgba(115, 188, 217, 0.48));
+            border-radius: 20px;
+            margin-top: 5%;
+            margin-left: 9%;
+        }
+        .detail--2{
+            width: 320px;
+            height: 500px;
+            background: linear-gradient(rgba(115, 188, 217, 0.48),rgba(115, 188, 217, 0.5486),rgba(115, 188, 217, 1));
+            border-radius: 20px;
+            margin-top: 11%;
+            margin-left: 9%;
+        }
+        .detail--3{
+            width: 320px;
+            height: 500px;
+            background: linear-gradient(rgba(115, 188, 217, 1),rgba(115, 188, 217, 0.48));
+            border-radius: 20px;
+            margin-top: 16%;
+            margin-left: 9%;
+        }
+        #home__header{
+            position: absolute;
+            float: right;
+            z-index: 2;
+        }
+        .home--titlebutton{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: rgba(76, 71, 71, 1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container--1">
+        <div class="box__icon">
+            <i class="glyphicon glyphicon-earphone icon__phone"></i>
+        <p id="contact">Contact Us</p>
+        </div>
+        <div class="option">
+            <div class="id">
+            <a class="link" href="">Trang chủ</a>
+            <a class="link" href="">Về chúng tôi</a>
+            <a class="link" href="">Dịch vụ</a>
+            <div class="search">
+                <input id="search" type="text" placeholder="Tìm kiếm">
+                <i class="glyphicon glyphicon-search iconsearch"></i>
+            </div>
+            <input id="button-login" type="submit"value="Log in">
+        </div>
+        </div>
+    </div>
+    <div class="container--2">
+        <div class="name__menu">
+        <i class="glyphicon glyphicon-menu-hamburger iconmenu"></i>
+        <img class="img" src="./Capture.PNG" alt="">
+        <p class="name"><span class="TK">TK</span> Hospital</p>
+        </div>
+        <div class="function">
+        <input class="button-function" type="submit" value="Virtual Doctor">
+        <input class="button-function" type="submit" value="Homecare">
+        <input class="button-function function--3" type="submit" value="Schedule Appointment">
+        </div>
+    </div>
+    <div id="home__background-1">
+        <div id="home--circle">
+            <img id="home__img--1" src="./unsplash_DK--4VWK1tw.png" alt="">
+        </div>
+        <p class="home__title">WELCOME TO <SPan class="tk">TK</SPan> <br>
+            HOSPITAL
+        </p>
+        <P class="home__content-1">
+            Top 10 most excellent hospital in Vietnam
+        </P>
+        <p class="home__content-2" >
+            Safely get to know your <br> body by our service
+        </p>
+        <p class="home__content-3">
+            Anytime, Anywhere, Any curcumstances
+        </p>
+        <p class="home__content-4">
+            Subcribe for our latest information
+        </p>
+        <div id="home--search">
+            <input id="home__button--writemail" type="text" placeholder="Write your email here">
+        <input id="home__button--go" type="submit" value="Go">
+        </div>
+    </div>
+    <div class="container--3">
+        <div id="home__header">
+            <p>
+                Tại đậy chúng tôi cung cấp
+            </p>
+        </div>
+        
+        <div class="home__container--item-1">
+            <div class="detail--1">
+                <p class="home--titlebutton">Homecare</p>
+            </div>
+        
+        
+            <div class="detail--2">
+                <p class="home--titlebutton">Schedule Appointment</p>
+            </div>
+        
+        
+            <div class="detail--3">
+                <p class="home--titlebutton">Virtual Doctor</p>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>
